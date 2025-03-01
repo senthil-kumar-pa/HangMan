@@ -1,0 +1,132 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="baseDisabled.png" />
+    <None Remove="baseEnabled.png" />
+    <None Remove="bodyDisabled.png" />
+    <None Remove="bodyEnabled.png" />
+    <None Remove="columnDisabled.png" />
+    <None Remove="columnEnabled.png" />
+    <None Remove="extensionDisabled.png" />
+    <None Remove="extensionEnabled.png" />
+    <None Remove="hangmanfull.png" />
+    <None Remove="headDisabled.png" />
+    <None Remove="headEnabled.png" />
+    <None Remove="Images\baseDisabled.png" />
+    <None Remove="Images\baseEnabled.png" />
+    <None Remove="Images\bodyDisabled.png" />
+    <None Remove="Images\bodyEnabled.png" />
+    <None Remove="Images\columnDisabled.png" />
+    <None Remove="Images\columnEnabled.png" />
+    <None Remove="Images\extensionDisabled.png" />
+    <None Remove="Images\extensionEnabled.png" />
+    <None Remove="Images\hangmanfull.png" />
+    <None Remove="Images\headDisabled.png" />
+    <None Remove="Images\headEnabled.png" />
+    <None Remove="Images\leftHandDisabled.png" />
+    <None Remove="Images\leftHandEnabled.png" />
+    <None Remove="Images\leftLegDisabled.png" />
+    <None Remove="Images\leftLegEnabled.png" />
+    <None Remove="Images\rightHandDisabled.png" />
+    <None Remove="Images\rightHandEnabled.png" />
+    <None Remove="Images\rightLegDisabled.png" />
+    <None Remove="Images\rightLegEnabled.png" />
+    <None Remove="Images\ropeDisabled.png" />
+    <None Remove="Images\ropeEnabled.png" />
+    <None Remove="Images\supportDisabled.png" />
+    <None Remove="Images\supportEnabled.png" />
+    <None Remove="leftHandDisabled.png" />
+    <None Remove="leftHandEnabled.png" />
+    <None Remove="leftLegDisabled.png" />
+    <None Remove="leftLegEnabled.png" />
+    <None Remove="rightHandDisabled.png" />
+    <None Remove="rightHandEnabled.png" />
+    <None Remove="rightLegDisabled.png" />
+    <None Remove="rightLegEnabled.png" />
+    <None Remove="ropeDisabled.png" />
+    <None Remove="ropeEnabled.png" />
+    <None Remove="supportDisabled.png" />
+    <None Remove="supportEnabled.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\baseDisabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\baseEnabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bodyDisabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bodyEnabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\columnDisabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\columnEnabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\extensionDisabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\extensionEnabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\hangmanfull.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\headDisabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\headEnabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\leftHandDisabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\leftHandEnabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\leftLegDisabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\leftLegEnabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\rightHandDisabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\rightHandEnabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\rightLegDisabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\rightLegEnabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ropeDisabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ropeEnabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\supportDisabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\supportEnabled.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

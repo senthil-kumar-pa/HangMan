@@ -1,0 +1,85 @@
+﻿<Window x:Class="HangMan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HangMan.UserControls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1000">
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="90*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="60*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Play" Click="PlayButton_Click" Width="118"></Button>
+        </StackPanel>
+        <Canvas Margin="1" Grid.Row="1" Grid.Column="0">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF887BC7" Offset="1"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+            <Image Visibility="Visible" x:Name="ColumnImage" Canvas.Left="62" Canvas.Top="86" Source="/columnDisabled.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Image Visibility="Visible" x:Name="BaseImage" Canvas.Left="12" Canvas.Top="391" Source="/baseDisabled.png" HorizontalAlignment="Left" VerticalAlignment="Center" Stretch="None"/>
+            <Image Visibility="Visible" x:Name="ExtensionImage" Canvas.Left="157" Canvas.Top="86" Source="/extensionDisabled.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Image Visibility="Visible" x:Name="SupportImage" Canvas.Left="81" Canvas.Top="84" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/supportDisabled.png" />
+            <Image Visibility="Visible" x:Name="RopeImage" Canvas.Left="254" Canvas.Top="84" Stretch="None" Source="/ropeDisabled.png" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Image Visibility="Visible" x:Name="HeadImage" Canvas.Left="210" Canvas.Top="167" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/headDisabled.png" />
+            <Image Visibility="Visible" x:Name="BodyImage" Canvas.Left="254" Canvas.Top="272" Stretch="None" Source="/bodyDisabled.png" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Image Visibility="Visible" x:Name="LeftHandImage" Canvas.Left="201" Canvas.Top="279" Source="/leftHandDisabled.png" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Image Visibility="Visible" x:Name="RightHandImage" Canvas.Left="270" Canvas.Top="278" Source="/rightHandDisabled.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Image Visibility="Visible" x:Name="LeftLegImage" Canvas.Left="204" Canvas.Top="352" Source="/leftLegDisabled.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Image Visibility="Visible" x:Name="RightLegImage" Canvas.Left="262" Canvas.Top="352" Source="/rightLegDisabled.png" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+        <StackPanel Margin="1" Grid.Row="1" Grid.Column="1">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF887BC7" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <StackPanel Orientation="Horizontal">
+                <Label FontSize="24" Content="Score" Foreground="#FF8EC6B8" FontWeight="ExtraBold" BorderThickness="2,2,2,2" BorderBrush="#FF44E69A" Background="#FF6C45AF">
+                    <Label.Effect>
+                        <DropShadowEffect/>
+                    </Label.Effect>
+                </Label>
+                <Label x:Name="CurrentScoreLabel" FontSize="24" Content="." Foreground="#FF8EC6B8" FontWeight="ExtraBold" BorderThickness="2,2,2,2" BorderBrush="#FF44E69A" Background="#FF6C45AF">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+                <Label FontSize="24" Content="Total Score" Foreground="#FF8EC6B8" FontWeight="ExtraBold" BorderThickness="2,2,2,2" BorderBrush="#FF44E69A" Background="#FF6C45AF">
+                    <Label.Effect>
+                        <DropShadowEffect/>
+                    </Label.Effect>
+                </Label>
+                <Label x:Name="TotalScoreLabel" FontSize="24" Content="." Foreground="#FF8EC6B8" FontWeight="ExtraBold" BorderThickness="2,2,2,2" BorderBrush="#FF44E69A" Background="#FF6C45AF">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+                <Label FontSize="24" Content="High Score" Foreground="#FF8EC6B8" FontWeight="ExtraBold" BorderThickness="2,2,2,2" BorderBrush="#FF44E69A" Background="#FF6C45AF">
+                    <Label.Effect>
+                        <DropShadowEffect/>
+                    </Label.Effect>
+                </Label>
+                <Label x:Name="HighScoreLabel" FontSize="24" Content="." Foreground="#FF8EC6B8" FontWeight="ExtraBold" BorderThickness="2,2,2,2" BorderBrush="#FF44E69A" Background="#FF6C45AF">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            </StackPanel>
+            <local:LetterDisplayControl x:Name="WordDisplay" Height="112" HorizontalAlignment="Center" Margin="10"/>
+            <!--<TextBox x:Name="txtInput" Width="300" Height="30" FontSize="16" Margin="10"/>-->
+            <local:VirtualKeyboard KeyPressed="VirtualKeyboard_KeyPressed" Width="480"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
